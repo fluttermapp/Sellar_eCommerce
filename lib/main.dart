@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sellar_e_commerce/widget_tree.dart';
 
-import 'eCommerce/e_com_item_description.dart';
-
 void main() {
   runApp(MyApp());
 }

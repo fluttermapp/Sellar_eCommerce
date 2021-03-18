@@ -15,15 +15,15 @@ class TopBarDescription extends StatelessWidget {
       padding: const EdgeInsets.all(kPadding),
       child: Row(
         children: [
-          if (Responsive.isMobile(context)) BackButton(),
-          if (Responsive.isDesktop(context))
+         /*  if (ResponsiveLayout.isIphone(context)) BackButton(),
+          if (ResponsiveLayout.isMacbook(context))
             IconButton(
               icon: Icon(
                 Icons.print_outlined,
                 color: Theme.of(context).iconTheme.color,
               ),
               onPressed: () {},
-            ),
+            ), */
           Spacer(),
           ConstrainedBox(
             constraints: BoxConstraints.tightFor(

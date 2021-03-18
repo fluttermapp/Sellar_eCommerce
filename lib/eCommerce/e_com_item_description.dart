@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sellar_e_commerce/responsive_layout.dart';
 
 import '../k_padding.dart';
 import 'item_description/top_bar_description.dart';
@@ -104,19 +105,20 @@ class ECommerceItemDescription extends StatelessWidget {
                                         SizedBox(
                                           width: kPadding * 3,
                                         ),
-                                        Container(
-                                          width: constraints.maxWidth > 840
-                                              ? 600
-                                              : constraints.maxWidth - 200,
-                                          child: ClipRRect(
-                                            borderRadius:
-                                                BorderRadius.circular(8),
-                                            child: Image.asset(
-                                              "images/switch_box.jpg",
-                                              fit: BoxFit.contain,
+                                        if (constraints.maxWidth > 300)
+                                          Container(
+                                            width: constraints.maxWidth > 840
+                                                ? 600
+                                                : constraints.maxWidth - 200,
+                                            child: ClipRRect(
+                                              borderRadius:
+                                                  BorderRadius.circular(8),
+                                              child: Image.asset(
+                                                "images/switch_box.jpg",
+                                                fit: BoxFit.contain,
+                                              ),
                                             ),
                                           ),
-                                        ),
                                       ],
                                     ),
                                     Divider(thickness: 1),

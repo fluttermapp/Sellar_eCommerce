@@ -49,7 +49,6 @@ class _ECommerceItemsState extends State<ECommerceItems> {
                     ),
                     onPressed: () {},
                   ),
-                  if (!Responsive.isDesktop(context)) SizedBox(width: 5),
                   Expanded(
                     child: Container(
                       margin: const EdgeInsets.symmetric(
@@ -72,13 +71,13 @@ class _ECommerceItemsState extends State<ECommerceItems> {
                       ),
                     ),
                   ),
-                  if (!Responsive.isDesktop(context))
+                  /*  if (!ResponsiveLayout.isMacbook(context))
                     IconButton(
                       icon: Icon(Icons.menu),
                       onPressed: () {
                         _scaffoldKey.currentState.openEndDrawer();
                       },
-                    ),
+                    ), */
                   SizedBox(width: kPadding / 2)
                 ],
               ),
@@ -106,8 +105,9 @@ class _ECommerceItemsState extends State<ECommerceItems> {
                       childAspectRatio: 0.75,
                     ),
                     itemBuilder: (context, index) => ECommerceItem(
-                      selected:
-                          Responsive.isMobile(context) ? false : index == 0,
+                      /*  selected: ResponsiveLayout.isIphone(context)
+                          ? false
+                          : index == 0, */
                       item: products[index],
                       onPressed: () => Navigator.push(
                         context,

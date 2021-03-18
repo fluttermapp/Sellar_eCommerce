@@ -30,7 +30,7 @@ class ECommerceDrawer extends StatelessWidget {
                     width: 150,
                   ),
                   Spacer(),
-                  if (!Responsive.isDesktop(context)) CloseButton(),
+                  //if (!ResponsiveLayout.isMacbook(context)) CloseButton(),
                 ],
               ),
               SizedBox(height: kPadding),
@@ -87,7 +87,6 @@ class ECommerceDrawer extends StatelessWidget {
                 ),
               ),
               SizedBox(height: kPadding * 2),
-              // Menu Items
               DrawerItems(
                 onPressed: () {},
                 title: "Your Account",

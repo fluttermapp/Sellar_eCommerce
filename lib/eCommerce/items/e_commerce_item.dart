@@ -11,7 +11,7 @@ class ECommerceItem extends StatelessWidget {
     Key key,
     this.item,
     this.onPressed,
-    this.selected = true,
+    this.selected = false,
   }) : super(key: key);
 
   @override
@@ -50,7 +50,6 @@ class ECommerceItem extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(vertical: kPadding / 4),
             child: Text(
-              // items is out demo list
               item.title,
               style: TextStyle(color: Colors.black.withOpacity(0.5)),
             ),
